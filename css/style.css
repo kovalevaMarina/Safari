@@ -23,12 +23,26 @@ a {
   padding: 0 10px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* Стили для header */
+
 .header {
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-color: #886239;
+  margin-bottom: 100px;
 }
 
 .header__inner {
@@ -123,6 +137,15 @@ a {
   background-color: #886239;
   border-radius: 30px;
   color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.header__btn:hover {
+  opacity: 0.8;
+}
+
+.header__btn:active {
+  color: #1F1E1E;
 }
 
 .header__arrow {
@@ -136,4 +159,28 @@ a {
 
 .header__arrow-link:hover {
   opacity: 0.6;
+}
+
+/* Стили для direction */
+
+.direction {
+  margin-bottom: 100px;
+}
+
+.direction__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 33px;
+}
+
+.direction__img {
+  display: block;
+}
+
+.direction__text {
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #886239;
+  border-top: none;
+  padding: 12px 19px 19px;
 }
