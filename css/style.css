@@ -36,7 +36,7 @@ a {
 
 .title {
   font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 47px;
   text-align: center;
@@ -201,11 +201,13 @@ a {
   background-size: cover;
   background-position: top center;
   padding: 30px 0 51px;
+  margin-bottom: 100px;
 }
 
 .travel-info__title {
   color: #FFFFFF;
   margin-bottom: 50px;
+  font-weight: 500;
 }
 
 .travel-info__list {
@@ -228,3 +230,74 @@ a {
   line-height: 21px;
   color: #FFFFFF;
 }
+
+/* Стили для popular */
+
+.popular {
+  margin-bottom: 100px;
+}
+
+.popular__title {
+  margin-bottom: 40px;
+}
+
+.popular__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 32px;
+  padding-bottom: 82px;
+  border-bottom: 1px solid #886239;
+}
+
+.popular__link {
+  padding: 16px 24px 19px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 256px;
+  line-height: 23px;
+}
+
+.popular__link:nth-child(3),
+.popular__link:nth-child(6) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.popular__link-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.popular__link-title--big {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.popular__price {
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.popular__country,
+.popular__time  {
+  margin-bottom: 15px;
+}
+
+/* Стили для map */
+
+.map {
+  margin-bottom: 100px;
+}
+
+.map__title {
+  font-weight: 500;
+  margin-bottom: 46px;
+}
+
