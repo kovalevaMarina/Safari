@@ -34,6 +34,14 @@ a {
   clip: rect(0 0 0 0);
 }
 
+.title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+}
+
 /* Стили для header */
 
 .header {
@@ -183,4 +191,40 @@ a {
   border: 1px solid #886239;
   border-top: none;
   padding: 12px 19px 19px;
+}
+
+/* Стили для travel-info */
+
+.travel-info {
+  background-image: url("../images/travel-info-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 30px 0 51px;
+}
+
+.travel-info__title {
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.travel-info__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 54px 67px;
+}
+
+.travel-info__item {
+  list-style-type: none;
+}
+
+.travel-info__img {
+  margin-bottom: 15px;
+}
+
+.travel-info__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
