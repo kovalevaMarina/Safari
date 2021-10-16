@@ -261,12 +261,18 @@ a {
   background-position: center;
   min-height: 256px;
   line-height: 23px;
+  transition: all 0.5s;
 }
 
 .popular__link:nth-child(3),
 .popular__link:nth-child(6) {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.popular__link:hover {
+  opacity: 0.8;
+  color: #000000;
 }
 
 .popular__link-title {
@@ -301,3 +307,55 @@ a {
   margin-bottom: 46px;
 }
 
+/* Стили для about */
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 448px 640px;
+  grid-gap: 32px;
+}
+
+.about__title {
+  text-align: left;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.about__text {
+  margin-bottom: 34px;
+}
+
+.about__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+
+.about__link:hover {
+  color: #886239;
+}
+
+.about__link:active {
+  opacity: 0.6;
+}
+
+.about__popup {
+  background-image: url("../images/video-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__link {
+
+}
