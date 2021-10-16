@@ -7,4 +7,21 @@ $(function () {
     preloader: false,
     fixedContentPos: false
   });
+
+  $('.gallery__slider').slick({
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img class="arrow-left" src="images/arrow-left.svg" alt="Иконка стрелки влево"></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img class="arrow-right" src="images/arrow-right.svg" alt="Иконка стрелки вправо"></button>'
+  });
+
+  $('.gallery-item-inner').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    }
+  });
 });
