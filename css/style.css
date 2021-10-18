@@ -575,3 +575,57 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Стили для footer */
+
+.footer {
+  padding: 77px 0 81px;
+  background-color: #1F1E1E;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+.footer__info {
+  width: 255px;
+}
+.footer__box-title {
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+.footer__copy {
+  margin-bottom: 3px;
+  opacity: 0.8;
+}
+.footer__link {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.footer__address {
+  width: 165px;
+}
+.footer__address-text {
+  opacity: 0.8;
+}
+.footer__contacts {
+  width: 210px;
+}
+.footer__phone {
+  opacity: 0.8;
+}
+.footer__email {
+  opacity: 0.8;
+  display: block;
+}
