@@ -119,6 +119,10 @@ a {
   text-decoration: underline;
 }
 
+.menu__btn {
+  display: none;
+}
+
 .header__title {
   font-family: "PT Serif", "Arial", serif;
   font-weight: bold;
@@ -129,7 +133,7 @@ a {
 }
 
 .header__description {
-  width: 422px;
+  max-width: 422px;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -139,7 +143,6 @@ a {
 .btn {
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 20px;
   padding: 19px 55px 20px;
   background-color: #886239;
   border-radius: 30px;
@@ -482,7 +485,7 @@ a {
   display: block;
   font-family: "PT Serif", "Arial", serif;
   font-weight: bold;
-  font-size: 58px;
+  font-size: 56px;
   line-height: 75px;
   color: #886239;
 }
@@ -581,9 +584,6 @@ a {
 .footer {
   padding: 77px 0 81px;
   background-color: #1F1E1E;
-  color: #FFFFFF;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .footer__logo {
@@ -596,36 +596,37 @@ a {
   justify-content: space-between;
   max-width: 830px;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer__info {
   width: 255px;
 }
+
 .footer__box-title {
   margin-bottom: 7px;
   font-weight: 500;
+  color: #FFFFFF;
 }
+
 .footer__copy {
   margin-bottom: 3px;
-  opacity: 0.8;
 }
+
 .footer__link {
   text-decoration: underline;
-  opacity: 0.8;
 }
+
 .footer__address {
   width: 165px;
 }
-.footer__address-text {
-  opacity: 0.8;
-}
+
 .footer__contacts {
   width: 210px;
 }
-.footer__phone {
-  opacity: 0.8;
-}
+
 .footer__email {
-  opacity: 0.8;
   display: block;
 }
